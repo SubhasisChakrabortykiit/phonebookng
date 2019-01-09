@@ -1,0 +1,10 @@
+Services
+========
+helps component to connect to rest api
+acts as an intermediate layer
+1. get data from component
+2. send the data t api endpoint
+    2.1 find api end point --- https://jsonplaceholder.typicode.com/users
+    2.2. find out right http method - POST
+3. receive the data from rest api
+4. send the response back to the component.

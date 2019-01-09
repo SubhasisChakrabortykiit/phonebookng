@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="row">
+      <section class="col-sm-6 offset-sm-3 main-section ">
+          <!-- <form ngNativeValidate #f="ngForm" (ngSubmit)="onSubmitHandler(f)"> ==== see ngNativeValidate--> 
+        <form #f="ngForm" (ngSubmit)="onSubmitHandler(f)">
+            <div class= "alert alert-danger"> {{ formErr }} </div>
+          <div class="form-group row">
+            <label for="staticEmail" class="col-sm-2 col-form-label">Name</label>
+            <div class="col-sm-10">
+              <!-- <input type="text" class="form-control" name="username" placeholder="Enter user Name" [(ngModel)]="contactData.username" required> === see ngForm -->
+              <input type="text" class="form-control" name="username" placeholder="Enter user Name" ngModel required>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="staticEmail" class="col-sm-2 col-form-label">Phone</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" name="phone" placeholder="Enter Phone" ngModel>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" name="mail" placeholder="Enter Email" ngModel>
+            </div>
+          </div>
+  
+          <div class="form-group row">
+            <div class="col-sm-10 offset-sm-2">
+              <button type="submit" class="btn btn-primary">Submit</button> &nbsp;
+              <button type="button" class="btn btn-success">Back</button>
+            </div>
+          </div>
+        </form>
+  
+      </section>
+    </div>
+  </div>
+  

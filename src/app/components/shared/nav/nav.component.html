@@ -1,0 +1,24 @@
+<ul class="navbar-nav mr-auto">
+    <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+      <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+    </li>
+    <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link"routerLink="/concepts">Concepts</a>
+      </li>
+    <li class="nav-item" routerLinkActive="active">
+      <a class="nav-link" routerLink="/contacts">Contacts</a>
+    </li>
+    <li class="nav-item" routerLinkActive="active">
+      <a class="nav-link" routerLink="/add-contact">Add contact</a>
+    </li>
+    <li class="nav-item" routerLinkActive="active">
+      <a class="nav-link" routerLink="/contact-details">Contact Details</a>
+    </li>
+    <li class="nav-item" routerLinkActive="active">
+      <a class="nav-link" routerLink="/new-banner">Banner</a>
+    </li>
+    <li class="nav-item" routerLinkActive="active">
+      <a class="nav-link" routerLink="/about">About</a>
+    </li>
+    <ng-content></ng-content>
+</ul>

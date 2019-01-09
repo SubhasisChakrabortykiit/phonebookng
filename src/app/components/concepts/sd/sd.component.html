@@ -1,0 +1,34 @@
+<div *ngIf="!isLoggedIn">
+  Not Logged iN
+</div>
+
+<div *ngIf="isLoggedIn">
+  Logged iN
+</div>
+
+
+<!-- TODO: try template reference for else condition -->
+
+<ul>
+  <li *ngFor="let user of usersList">{{ user }}</li>
+
+</ul>
+
+<!-- TDOD: try ngSwitch -->
+
+
+<!-- template reference -->
+
+<p>Template reference</p>
+
+<div *ngIf="!isPremiumUser(); then premiumUser else basicUser">
+  Test
+</div>
+
+<ng-template #premiumUser>
+  Wow! You are a premium user
+</ng-template>
+
+<ng-template #basicUser>
+   Wow! You are a basic user
+</ng-template>

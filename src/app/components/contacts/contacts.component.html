@@ -1,0 +1,14 @@
+<div class="container-fluid" >
+    <div class="row col-sm-12" *ngIf="contactsList">
+      <div class="card" style="width: 18rem;" *ngFor="let i of contactsList">
+          <div class="card-body">
+            <h2 align="center">{{i.id}}</h2>
+            <p align="center">{{i.username}}</p>
+            <p align="center"><b><i>{{i.company.name}}</i></b></p>
+            <p><b>Address </b>: {{i.address.street}}, {{i.address.suite}},
+              {{i.address.city}}, {{i.address.zipcode}}</p><br>
+            <a routerLink="/contact-details/{{i.id}}" class="link">View Details</a>
+          </div>
+      </div>
+    </div>
+</div>

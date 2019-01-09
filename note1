@@ -1,0 +1,27 @@
+ng g c footer -is 
+
+https://chrome.google.com/webstore/detail/augury/elgalmkoelokbchhkhacckoklkejnhcd
+ng g c search -it -is 
+ng g c header/search -it -is --flat     
+
+Data Binding 
+===========
+	1. String Interpolation - {{ }} 
+	2. Property Binding - [ ]
+	3. Custom Property Binding  - [ ]
+        4. Event Binding  - ()
+	5. Custom Event Binding  - ()
+        6. Two Way Binding  - [()]  
+
+Expression  - { } 
+=========== 
+
+https://github.com/arunprabu/ng4-july18
+
+
+https://jsonplaceholder.typicode.com/ -- help material
+https://jsonplaceholder.typicode.com/users --  GET, POST
+https://jsonplaceholder.typicode.com/users/1 - GET, PUT, DELETE
+
+https://github.com/arunprabu/phone-book-app/
+https://leanpub.com/understandinges6/read

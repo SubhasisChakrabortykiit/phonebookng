@@ -1,0 +1,7 @@
+<div>
+  <!-- the following wont work as no function in js defined -->
+  <button type="button" onclick="onTestBtnClick()">Test</button>
+  <br>
+  <!-- the following will wotrk as we have it defined in ts -->
+  <button type="button" (click)="onTestBtnClick($event)">Testing Button</button>
+</div>

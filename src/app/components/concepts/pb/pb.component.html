@@ -1,0 +1,24 @@
+<div>
+
+  <input type ="text" value="{{developer}}"> <!-- string interpolation--> 
+  <br><br>
+  <input type="text" [value]="developer"> <!-- property binding--> 
+
+  <div class="red">
+    Not Logged in
+  </div>
+
+  <div><!-- [ngClass]="red"> -->
+    Not Logged in -- wont work as no variable 'red' is defined in ts
+  </div>
+
+  <div [ngClass]="{ 'red' : !isLoggedIn, 'green' : isLoggedIn }"> 
+    Not Logged in 
+  </div>
+
+  <!--try [ngStyle] -->
+  <div [ngClass]="{ 'red' : getLoggedInStatus(), 'green' : !getLoggedInStatus() }"> 
+      Not Logged in
+  </div>
+
+</div>

@@ -1,0 +1,7 @@
+step 1. creating custom event in the name os profileLoaded
+step 2: emit the custom event
+step 3: listen on the emitted custom event(defining event)
+
+custom event
+<div (onProfileLoaded)=" ">
+</div>
